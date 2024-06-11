@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+
+
+
+
+/* header */
+
+body{
+  overflow-x: hidden;
+  font-family: 'Marmelad';
+}
+
+
+
+/* Навигационная часть */
+
+header{
+  padding-top: 64px ;
+  color: white;
+  display: flex;
+ 
+}
+
+.mid-slider{
+  max-height: 1000px;
+  background: url(../img/back1.jfif);
+  background-size: cover;
+  background-position: center;
+  animation: animate 60s infinite;
+  
+}
+
+@keyframes animate{
+    10% { 
+      background-image:   url(../img/back7.jfif);
+      background-size: cover;
+    }
+
+    20% {
+      background-image:   url(../img/back8.jfif);
+      background-size: cover;
+    }
+
+    30% {
+      background-image:   url(../img/back5.jfif);
+      background-size: cover;
+    }
+
+    40% {
+      background-image:   url(../img/back2.jfif);
+      background-size: cover;
+    }
+    50% {
+      background-image:   url(../img/back4.jfif);
+      background-size: cover;
+    }
+    60% {
+        background-image:   url(../img/back6.jfif);
+        background-size: cover;
+    }
+    70% {
+      background-image:   url(../img/back9.jfif);
+      background-size: cover;
+    }
+    70% {
+    background-image:   url(../img/back3.jfif);
+    background-size: cover;
+  }
+  80% {
+  background-image:   url(../img/back11.jfif);
+  background-size: cover;
+}
+90% {
+  background-image:   url(../img/back12.jfif);
+  background-size: cover;
+}
+
+100% {
+  background-image:   url(../img/back10.jfif);
+  background-size: cover;
+}
+}
+
+.navigation{
+  font-size: 19px;
+  margin: 0 auto;
+  width: 1760px;
+  padding: 0 15px;
+  font-weight: 600;
+     
+
+}
+
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 600px;
+}
+
+.logo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: -25px;
+
+}
+
+
+.logo svg{
+  float: left;
+  width: 70px;
+  fill: white;
+}
+
+
+.nav{
+  display: flex;
+  gap: 100px;
+}
+
+.nav a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+.nav a:after {
+	content: "";
+  display: block;
+  position: relative;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; 
+  background-color: black; 
+  transition: width 0.5s; 
+}
+
+.nav a:hover:after {
+	content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: -3px;
+  height: 2px; 
+  background-color: rgb(233, 227, 192); 
+  transition: width 0.5s; 
+}
+
+
+.heading{
+  all: unset;
+  display: block;
+  padding-left: 200px;
+  margin-bottom: 200px;
+  max-width: 950px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease-in;
+ 
+}
+
+.heading:hover{
+  transform: translateY(-30%);
+}
+
+.heading h1{
+  font-size: 80px;
+}
+
+
+/* Часть обо мне */
+
+.conteiner{
+  background-color: rgb(233, 227, 192);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.quote{
+  margin-top: 80px;
+  text-align: center;
+  color: #333;
+  
+}
+
+.quote h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.quote p{
+  font-size: 20px;
+}
+
+.create-line {
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  margin-top: 20px;
+  border-top: 3px solid #ffffff;
+  }
+
+.article{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px; 
+}
+
+
+.content-text{
+  padding: 50px;
+  color: #333;
+  display: block;
+
+}
+
+.content-text h2{
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.content-text p{
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.content-image img{
+  width: 400px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.content a{
+  all: unset;
+}
+
+.content a button {
+  all: unset;
+  background-color: #333;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+
+
+}
+
+
+.content button:hover{
+  background-color: rgba(122, 73, 45, 0.212);
+  color: #333;
+
+}
+
+
+
+
+/* Часть отзывы */
+
+.reviews-main{
+  background-color: #333;
+  padding: 100px;
+}
+
+.reviews-main h2{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+.sectionesag {
+  width: 195px;
+  height: 3px;
+  background: #ffffff;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+   
+}
+
+.reviews-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+figure.reviews {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  }
+figure.reviews * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  }
+figure.reviews img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+  figure.reviews blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+  }
+figure.reviews blockquote:before,
+figure.reviews blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+  }
+figure.reviews blockquote:before {
+  top: 25px;
+  left: 20px;
+  }
+figure.reviews blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+  }
+figure.reviews .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+  }
+figure.reviews .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.reviews .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+
+
+
+/* Подвал */
+
+.footerr {
+  display: flex;
+  min-height: 400px;
+  background-color: #ffffff;
+  line-height: 1.3;   
+}
+
+.footerr ul {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerr a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.footerr a:after {
+	content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; 
+  background-color: black; 
+  transition: width 0.5s; 
+}
+
+.footerr a:hover:after {
+	content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; 
+  background-color: rgb(233, 227, 192); 
+  transition: width 0.5s; 
+}
+
+
+
+.footerr li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.footerr li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+
+.footerr  svg{
+  display: flex;
+  
+}
+
+
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+  
+
+.header-burger{
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+/* Адаптация  */
+@media (max-width: 1250px) {
+  .mid-slider{
+    max-height: 700px;
+  }
+  .logo{
+    margin-left: 40px;
+  }
+  .nav{
+    gap: 30px;
+    margin-right: 50px;
+  }
+  .heading{
+    margin-top: -250px;
+}
+.heading h1{
+  font-size: 60px;
+}
+}
+
+
+@media (max-width: 992px) {
+  .mid-slider{
+    max-height: 600px;
+  }
+  .heading{
+    margin-top: -250px;
+    padding-left: 50px;
+  
+}
+  .nav{
+    gap: 30px;
+   padding-right: 20px;
+  }
+.heading h1{
+  font-size: 50px;
+}
+.quote h2{
+  font-size: 30px;
+}
+.quote p{
+  font-size: 15px;
+}
+.create-line {
+  width: 700px;
+  }
+.content-text h2{
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.content-text p{
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.content-image img{
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+.article{
+  padding: 7px 0px;
+}
+.content a button {
+  width: 150px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.reviews-main h2{
+  font-size: 30px;
+}
+.sectionesag {
+  width: 150px;
+   
+}
+.reviews-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 60px;
+}
+
+  .footerr ul {
+    grid-auto-flow: row;
+    }
+  }
+
+
+  @media (max-width: 860px) {
+    .header-burger{
+      display: inline-block;
+      margin-right: 40px;
+    }
+    .nav{
+      position: absolute;
+      min-width: 100%;
+      left: 0px;
+      flex-direction: column;
+      gap: 30px;
+      background: #333;
+      padding: 30px;
+      box-sizing: border-box;
+      top: -250px;
+      transition: .5s;
+    }
+
+  .content-image img{
+      display: flex;
+      flex-direction: column;
+  }
+  .article{
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+    }
+
